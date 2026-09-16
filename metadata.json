@@ -1,0 +1,6 @@
+{
+  "name": "Prompt Visibility Tracker",
+  "description": "AI Search visibility, share of voice, and citation tracking platform for travel brands across real traveler personas and LLMs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
