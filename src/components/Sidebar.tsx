@@ -41,14 +41,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
   isMobileOpen = false,
   onCloseMobile,
 }) => {
-  // Generate 2-letter monogram from brand name, e.g. "ToursByLocals" -> "TL"
+  // Generate 2-letter monogram from brand name, e.g. "Example Travel" -> "ET"
   const getBrandInitials = (name: string) => {
     const cleaned = name.replace(/[^a-zA-Z0-9 ]/g, '').trim();
     const parts = cleaned.split(/\s+/);
     if (parts.length >= 2) {
       return (parts[0][0] + parts[1][0]).toUpperCase();
     }
-    // If single camelCase word like ToursByLocals
+    // If single camelCase word like Example Travel
     const capitals = cleaned.match(/[A-Z]/g);
     if (capitals && capitals.length >= 2) {
       return (capitals[0] + capitals[1]).toUpperCase();
