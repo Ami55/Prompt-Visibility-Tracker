@@ -58,8 +58,8 @@ export const LiveRunnerTab: React.FC<LiveRunnerTabProps> = ({
       stage: 'Booking',
     },
     {
-      title: 'Comparative: ToursByLocals vs Viator',
-      query: 'Compare ToursByLocals, Viator, and GetYourGuide for private personalized tours in Italy.',
+      title: 'Comparative: Example Travel vs Viator',
+      query: 'Compare Example Travel, Viator, and GetYourGuide for private personalized tours in Italy.',
       persona: 'dest-decided',
       dest: 'Italy',
       stage: 'Comparison',
@@ -73,7 +73,7 @@ export const LiveRunnerTab: React.FC<LiveRunnerTabProps> = ({
     },
     {
       title: 'Trust: Scam Protection & Vetting',
-      query: 'How safe is booking with ToursByLocals and what happens if my guide cancels?',
+      query: 'How safe is booking with Example Travel and what happens if my guide cancels?',
       persona: 'trust-cautious',
       dest: 'Global',
       stage: 'Comparison',

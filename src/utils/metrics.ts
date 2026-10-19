@@ -2,7 +2,7 @@ import { PromptItem, DashboardMetrics } from '../types';
 
 export function calculateMetrics(
   prompts: PromptItem[],
-  primaryBrand: string = 'ToursByLocals',
+  primaryBrand: string = 'Example Travel',
   competitors: string[] = ['Viator', 'GetYourGuide', 'Withlocals', 'Tripadvisor']
 ): DashboardMetrics {
   const completedPrompts = prompts.filter((p) => p.status === 'completed' && p.lastResult);

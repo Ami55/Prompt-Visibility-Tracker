@@ -112,7 +112,7 @@ export const HowItWorksModal: React.FC<HowItWorksModalProps> = ({
                     The Unprompted Blindspot
                   </h4>
                   <p className="text-xs text-slate-500 leading-relaxed">
-                    Testing your brand with brand keywords (e.g. <em>“ToursByLocals reviews”</em>) creates false confidence. The real test is: does the AI suggest you when the traveler asks an unbranded question?
+                    Testing your brand with brand keywords (e.g. <em>“Example Travel reviews”</em>) creates false confidence. The real test is: does the AI suggest you when the traveler asks an unbranded question?
                   </p>
                 </div>
 
@@ -147,7 +147,7 @@ export const HowItWorksModal: React.FC<HowItWorksModalProps> = ({
                   <div>
                     <h4 className="font-semibold text-slate-900 text-sm">Brand Name &amp; Domain</h4>
                     <p className="text-xs text-slate-500 mt-1">
-                      Your business name (e.g. <strong>ToursByLocals</strong>) and official web domain (<strong>toursbylocals.com</strong>). This enables verification of exact brand mentions and domain link citations.
+                      Your business name (e.g. <strong>Example Travel</strong>) and official web domain (<strong>example.com</strong>). This enables verification of exact brand mentions and domain link citations.
                     </p>
                   </div>
                 </div>

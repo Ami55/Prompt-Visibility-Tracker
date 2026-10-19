@@ -50,8 +50,8 @@ export const ProjectSettingsModal: React.FC<ProjectSettingsModalProps> = ({
   const handleSave = () => {
     onSaveConfig({
       ...brandConfig,
-      brandName: name.trim() || 'ToursByLocals',
-      brandDomain: domain.trim() || 'toursbylocals.com',
+      brandName: name.trim() || 'Example Travel',
+      brandDomain: domain.trim() || 'example.com',
       brandCategory: category.trim(),
       competitors,
       targetDestinations: destinations,

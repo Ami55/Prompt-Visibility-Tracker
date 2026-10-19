@@ -127,7 +127,7 @@ function buildTailoredPrompts(params: {
   const travelerType = params.travelerType || 'Family of four with two kids';
   const interests = params.interests || 'History, ancient architecture & local food';
   const constraints = params.constraints || 'Skip-the-line access, child-friendly pace, under $450';
-  const brandName = params.brandName || 'ToursByLocals';
+  const brandName = params.brandName || 'Example Travel';
   const journeyStage = params.journeyStage || 'Planning';
   const count = params.count || 5;
 
@@ -191,8 +191,8 @@ function buildTailoredPrompts(params: {
 app.post('/api/run-audit', async (req, res) => {
   const {
     query,
-    brandName = 'ToursByLocals',
-    brandDomain = 'toursbylocals.com',
+    brandName = 'Example Travel',
+    brandDomain = 'example.com',
     competitors = ['Viator', 'GetYourGuide', 'Withlocals', 'Tripadvisor'],
     personaName = 'Traveler',
     destination = 'Rome',
@@ -361,7 +361,7 @@ app.post('/api/generate-prompts', async (req, res) => {
     travelerType = 'Family of four with two kids',
     interests = 'History, ancient architecture & local food',
     constraints = 'Skip-the-line access, child-friendly pace, under $450',
-    brandName = 'ToursByLocals',
+    brandName = 'Example Travel',
     count = 5,
   } = req.body;
 
@@ -450,7 +450,7 @@ Output strictly in JSON format:
 
 // Generate GEO Recommendations & Content Strategy
 app.post('/api/geo-recommendations', async (req, res) => {
-  const { brandName = 'ToursByLocals', missedQueries = [] } = req.body;
+  const { brandName = 'Example Travel', missedQueries = [] } = req.body;
   const ai = getGeminiClient();
 
   if (!ai || missedQueries.length === 0) {
@@ -468,7 +468,7 @@ app.post('/api/geo-recommendations', async (req, res) => {
         },
         {
           title: 'Direct Comparison Guides vs Aggregators',
-          description: 'Publish transparent comparison guides (e.g., "ToursByLocals vs Viator: When to Choose Private Vetted Guides") to dominate comparative AI search answers.',
+          description: 'Publish transparent comparison guides (e.g., "Example Travel vs Viator: When to Choose Private Vetted Guides") to dominate comparative AI search answers.',
           impact: 'High'
         }
       ]
@@ -520,7 +520,7 @@ Respond strictly in JSON format:
         },
         {
           title: 'Direct Comparison Guides vs Aggregators',
-          description: 'Publish transparent comparison guides (e.g., "ToursByLocals vs Viator: When to Choose Private Vetted Guides") to dominate comparative AI search answers.',
+          description: 'Publish transparent comparison guides (e.g., "Example Travel vs Viator: When to Choose Private Vetted Guides") to dominate comparative AI search answers.',
           impact: 'High'
         }
       ]
