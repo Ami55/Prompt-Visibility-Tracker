@@ -36,7 +36,7 @@ function generateFallbackPrompts(
   const group = travelerType.trim() || 'Family with kids';
   const intr = interests.trim() || 'History, culture & local food';
   const constr = constraints.trim() || 'Skip-the-line access, child-friendly pace';
-  const brand = brandName || 'ToursByLocals';
+  const brand = brandName || 'Example Travel';
 
   const list = [
     {
