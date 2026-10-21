@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           <span>
             © 2026 Prompt Visibility Tracker. Developed by{' '}
             <strong className="font-semibold text-teal-700 hover:text-teal-800 transition-colors">
-              Ami - SEO Girl
+              SEO Girl - Ami
             </strong>
             . All rights reserved.
           </span>
